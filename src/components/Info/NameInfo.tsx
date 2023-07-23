@@ -5,7 +5,7 @@ const NameInfo = () => {
   return (
     <Wrapper>
       <Name>이지윤</Name>
-      <Desc>프론트 엔지니어</Desc>
+      <Desc>Frontend Engineer</Desc>
     </Wrapper>
   );
 };
@@ -18,11 +18,10 @@ const Wrapper = styled.span`
 `;
 
 const Name = styled.span`
-  font-size: 35px;
-  font-weight: 100;
+  font-size: 50px;
+  font-weight: 800;
 `;
 const Desc = styled.span`
   padding-top: 5px;
-  color: #a7a7a7;
-  font-weight: 100;
+  color: #828181;
 `;

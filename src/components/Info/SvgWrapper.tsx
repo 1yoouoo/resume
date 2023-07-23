@@ -17,8 +17,8 @@ const Wrapper = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: white;
   filter: invert(1);
@@ -27,12 +27,12 @@ const Wrapper = styled.span`
   transition: transform 0.3s ease;
 
   &:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
   }
 `;
 
 const Content = styled.span`
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 `;

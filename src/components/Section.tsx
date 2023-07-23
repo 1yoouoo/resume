@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 `;
 
 const Content = styled.div`
-  font-size: 25px;
+  font-size: 35px;
   padding-bottom: 10px;
   border-bottom: 2px dotted gray;
 `;

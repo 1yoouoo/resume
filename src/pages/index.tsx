@@ -1,12 +1,12 @@
+import AboutMe from '@/components/AboutMe/AboutMe';
 import Info from '@/components/Info/Info';
-import Section from '@/components/Section';
 import { styled } from 'styled-components';
 
 export default function Home() {
   return (
     <Wrapper>
       <Info />
-      <Section title='About Me' />
+      <AboutMe />
     </Wrapper>
   );
 }
