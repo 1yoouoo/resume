@@ -5,17 +5,21 @@ import ProfileImage from './ProfileImage';
 
 const AboutMe = () => {
   return (
-    <div>
+    <Wrapper>
       <Section title='About Me' />
       <Content>
         <ProfileImage />
         <Descriptsion />
       </Content>
-    </div>
+    </Wrapper>
   );
 };
 
 export default AboutMe;
+
+const Wrapper = styled.div`
+  padding-bottom: 20px;
+`;
 
 const Content = styled.div`
   display: flex;

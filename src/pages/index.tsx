@@ -1,5 +1,7 @@
 import AboutMe from '@/components/AboutMe/AboutMe';
+import ExtraActivities from '@/components/ExtraActivities/ExtraActivities';
 import Info from '@/components/Info/Info';
+import Projects from '@/components/Projects/Projects';
 import { styled } from 'styled-components';
 
 export default function Home() {
@@ -7,6 +9,8 @@ export default function Home() {
     <Wrapper>
       <Info />
       <AboutMe />
+      <Projects />
+      <ExtraActivities />
     </Wrapper>
   );
 }

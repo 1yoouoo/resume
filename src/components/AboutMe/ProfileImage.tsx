@@ -16,7 +16,7 @@ const ProfileImage = () => {
 export default ProfileImage;
 
 const Wrapper = styled.div`
-  padding-top: 30px;
+  padding: 30px;
 `;
 
 const Profile = styled.div`
@@ -26,7 +26,6 @@ const Profile = styled.div`
   border-radius: 50%;
   overflow: hidden;
   box-shadow: inset 0 0 30px #000000;
-  margin-right: 50px;
 `;
 
 const ImageWrapper = styled.div`

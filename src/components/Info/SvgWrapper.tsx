@@ -23,7 +23,6 @@ const Wrapper = styled.span`
   background-color: white;
   filter: invert(1);
   margin: 5px;
-  cursor: pointer;
   transition: transform 0.3s ease;
 
   &:hover {

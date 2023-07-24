@@ -31,12 +31,14 @@ const TooltipImage = styled.img`
   max-height: 500px;
 `;
 
-export const Tooltip = ({ text }: { text: string }) => {
+export const Tooltip = ({ text, href }: { text: string; href?: string }) => {
   return (
     <TextWithTooltip>
       {text}
       <TooltipWrapper>
-        <TooltipImage src={`/${text}.png`} alt='Preview' />
+        <a href={href} target='_blank' rel='noopener noreferrer'>
+          <TooltipImage src={`/${text}.png`} alt='Preview' />
+        </a>
       </TooltipWrapper>
     </TextWithTooltip>
   );

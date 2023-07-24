@@ -13,11 +13,12 @@ export default Section;
 
 const Wrapper = styled.div`
   width: 100%;
-  padding-top: 20px;
+  margin: 20px 0;
+  border-bottom: 2px dotted gray;
+  padding-bottom: 10px;
 `;
 
 const Content = styled.div`
   font-size: 35px;
-  padding-bottom: 10px;
-  border-bottom: 2px dotted gray;
+  margin-left: 5px;
 `;

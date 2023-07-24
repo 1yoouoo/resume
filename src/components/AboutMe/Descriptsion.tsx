@@ -26,8 +26,7 @@ const Descriptsion = () => {
       <Content>
         반복되는 일이 있으면 <H>자동화</H>하는 작업을 좋아하고 트랜드를 읽는 것을 좋아합니다.
         ChatGPT의 OpenAI을 이용하여{' '}
-        <HyperLink text='자동화 블로그' href='https://1yoouoo.github.io/' />를 만든 경험이 있습니다.
-        <HyperLink text='Github' href='https://github.com/1yoouoo/1yoouoo.github.io' />
+        <HyperLink text='자동화 블로그' href='https://1yoouoo.github.io/' />를 만든 경험이 있습니다.{' '}
         <HyperLink text='Blog' href='https://1yoouoo.tistory.com/22' />
       </Content>
       <Content>
