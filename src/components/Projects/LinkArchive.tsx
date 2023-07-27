@@ -4,25 +4,27 @@ import SvgWrapper from '../Info/SvgWrapper';
 import Vercel from '../Info/Vercel';
 import { H, HyperLink } from '../Styles/Effects';
 import {
+  Desktop,
   Left,
   Line,
   LinkWrapper,
   ProjectDuration,
   ProjectTitle,
   Right,
+  Tablet,
   TextContent,
   TextWrapper,
   Title,
   Wrapper,
 } from './Styles/ProjectStyle';
+import ProjectInfo from './ProjectInfo';
 
 const LinkArchive = () => {
   return (
     <>
       <Wrapper>
         <Left>
-          <ProjectTitle>LinkArchive</ProjectTitle>
-          <ProjectDuration>2023. 05 ~ 진행중</ProjectDuration>
+          <ProjectInfo title='LinkArchive' duration='2023. 05 ~ 진행중' />
           <LinkWrapper>
             <SvgWrapper SvgComponent={<Github />} href='https://github.com/linkarchive/Front-End' />
             <SvgWrapper SvgComponent={<Vercel />} href='https://www.link-archive.com/' />

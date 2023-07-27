@@ -1,4 +1,4 @@
-import { styled } from 'styled-components';
+import styled from 'styled-components';
 import Section from '../Section';
 import Descriptsion from './Descriptsion';
 import ProfileImage from './ProfileImage';
@@ -8,7 +8,9 @@ const AboutMe = () => {
     <Wrapper>
       <Section title='About Me' />
       <Content>
-        <ProfileImage />
+        <ProfileImageWrapper>
+          <ProfileImage />
+        </ProfileImageWrapper>
         <Descriptsion />
       </Content>
     </Wrapper>
@@ -23,4 +25,10 @@ const Wrapper = styled.div`
 
 const Content = styled.div`
   display: flex;
+`;
+
+const ProfileImageWrapper = styled.div`
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;

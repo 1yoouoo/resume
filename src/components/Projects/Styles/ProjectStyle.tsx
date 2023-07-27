@@ -5,17 +5,41 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
 `;
 
 export const Left = styled.div`
-  min-width: 310px;
+  min-width: 260px;
+
+  @media (max-width: 900px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+`;
+
+export const Tablet = styled.div`
+  display: none;
+  @media (max-width: 900px) {
+    display: block;
+  }
+`;
+
+export const Desktop = styled.div`
+  display: block;
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 
 export const Right = styled.div`
-  margin-left: 40px;
+  margin-left: 30px;
 `;
 
-export const ProjectTitle = styled.h1``;
+export const ProjectTitle = styled.h2``;
 
 export const ProjectDuration = styled.div`
   border-left: 4px solid black;

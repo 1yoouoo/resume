@@ -5,21 +5,19 @@ import { H } from '../Styles/Effects';
 import {
   Left,
   LinkWrapper,
-  ProjectDuration,
-  ProjectTitle,
   Right,
   TextContent,
   TextWrapper,
   Title,
   Wrapper,
 } from './Styles/ProjectStyle';
+import ProjectInfo from './ProjectInfo';
 
 const SweetHome = () => {
   return (
     <Wrapper>
       <Left>
-        <ProjectTitle>SweetHome</ProjectTitle>
-        <ProjectDuration>2023. 01 - 2023. 03</ProjectDuration>
+        <ProjectInfo title='SweetHome' duration='2023. 01 - 2023. 03' />
         <LinkWrapper>
           <SvgWrapper SvgComponent={<Github />} href='https://github.com/1yoouoo/SweetHome' />
         </LinkWrapper>

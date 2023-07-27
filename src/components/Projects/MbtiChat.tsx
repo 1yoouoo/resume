@@ -6,22 +6,20 @@ import {
   Left,
   Line,
   LinkWrapper,
-  ProjectDuration,
-  ProjectTitle,
   Right,
   TextContent,
   TextWrapper,
   Title,
   Wrapper,
 } from './Styles/ProjectStyle';
+import ProjectInfo from './ProjectInfo';
 
 const MbtiChat = () => {
   return (
     <>
       <Wrapper>
         <Left>
-          <ProjectTitle>MbtiChat</ProjectTitle>
-          <ProjectDuration>2023. 04</ProjectDuration>
+          <ProjectInfo title='MbtiChat' duration='2023. 04' />
           <LinkWrapper>
             <SvgWrapper
               SvgComponent={<Github />}

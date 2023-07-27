@@ -6,7 +6,7 @@ const ProfileImage = () => {
     <Wrapper>
       <Profile>
         <ImageWrapper>
-          {/* <Image src='/profile_image.jpeg' alt='Profile' layout='fill' objectFit='cover' /> */}
+          <Image src='/profile_image.jpeg' alt='Profile' layout='fill' objectFit='cover' />
         </ImageWrapper>
       </Profile>
     </Wrapper>
@@ -16,13 +16,13 @@ const ProfileImage = () => {
 export default ProfileImage;
 
 const Wrapper = styled.div`
-  padding: 30px;
+  padding: 50px 30px;
 `;
 
 const Profile = styled.div`
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: inset 0 0 30px #000000;

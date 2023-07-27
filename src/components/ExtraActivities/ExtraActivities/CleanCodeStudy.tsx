@@ -2,6 +2,8 @@ import {
   Left,
   Line,
   LinkWrapper,
+  ProjectDuration,
+  ProjectTitle,
   Right,
   TextContent,
   TextWrapper,
@@ -10,31 +12,23 @@ import {
 } from '@/components/Projects/Styles/ProjectStyle';
 import SvgWrapper from '@/components/Info/SvgWrapper';
 import Github from '@/components/Info/Github';
-import { H } from '@/components/Styles/Effects';
+import { H, HyperLink } from '@/components/Styles/Effects';
 import { Tooltip } from '@/components/Styles/Tooltip';
-import ProjectInfo from '@/components/Projects/ProjectInfo';
 
-const Wanted = () => {
+const CleanCodeStudy = () => {
   return (
     <>
       <Wrapper>
         <Left>
-          <ProjectInfo
-            title={['원티드 프리온보딩', <br key='linebreak' />, '인턴쉽 수료']}
-            duration='2023. 04 ~ 2023. 05'
-          />
+          <ProjectTitle>
+            원티드 프리온보딩 <br />
+            인턴쉽 수료
+          </ProjectTitle>
+          <ProjectDuration>2023. 04 ~ 2023. 05</ProjectDuration>
           <LinkWrapper>
             <SvgWrapper
               SvgComponent={<Github />}
-              href='https://github.com/wanted-Team-7/pre-onboarding-10th-1-7'
-            />
-            <SvgWrapper
-              SvgComponent={<Github />}
-              href='https://github.com/wanted-Team-7/pre-onboarding-10th-2-7'
-            />
-            <SvgWrapper
-              SvgComponent={<Github />}
-              href='https://github.com/wanted-Team-7/pre-onboarding-10th-4-7'
+              href='https://github.com/Sassy-Project/front-mbti-chat'
             />
           </LinkWrapper>
         </Left>
@@ -85,4 +79,4 @@ const Wanted = () => {
   );
 };
 
-export default Wanted;
+export default CleanCodeStudy;
