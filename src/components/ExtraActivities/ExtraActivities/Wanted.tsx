@@ -75,7 +75,7 @@ const Wanted = () => {
                 text='선정하는 회의'
                 href='https://drive.google.com/file/d/1hdeY3qmDe01ymIFdlDCNivEXKeuJJQ2v/view'
               />
-              에 발탁되었습니다.에서 <H>만장일치</H>로 선택된 경험이 있습니다.
+              에서 <H>만장일치</H>로 선택된 경험이 있습니다.
             </TextContent>
           </TextWrapper>
         </Right>
