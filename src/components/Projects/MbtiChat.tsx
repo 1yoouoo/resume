@@ -54,7 +54,7 @@ const MbtiChat = () => {
               경험할 수 있게 되었습니다.
               <HyperLink
                 text='코드'
-                href='https://gist.github.com/1yoouoo/6a10058d41234432dae6c5241ba5e1ee'
+                href='https://gist.github.com/1yoouoo/6a10058d41234432dae6c5241ba5e1ee#file-exponentialbackoff-ts'
               />
             </TextContent>
             <TextContent>
