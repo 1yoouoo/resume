@@ -50,7 +50,7 @@ const LinkArchive = () => {
           <Title>Tech Stack.</Title>
           <p>
             Next.js, Typescript, Redux-toolkit, React-query, styled-components, AWS-Route53, Vercel,
-            Figma
+            Figma, Jest, React-testing-library, msw
           </p>
           <Title>What I did.</Title>
           <TextWrapper>
@@ -62,14 +62,6 @@ const LinkArchive = () => {
               <H>사용자가 주로 접근하는 페이지의 접근성을 크게 향상시켰습니다.</H>
             </TextContent>
             <TextContent>
-              토큰이 만료될 때 클라이언트가 서비스를 이용하면서 불편함을 느끼지 않도록 갱신하는{' '}
-              <HyperLink
-                text='코드'
-                href='https://gist.github.com/1yoouoo/cb645cf66a7d15a6be2a43036efb4beb'
-              />
-              를 Axios Interceptor를 이용해서 구현했습니다.
-            </TextContent>
-            <TextContent>
               <HyperLink
                 text='피그마'
                 href='https://www.figma.com/file/h7Idnh5c59mgmx52ScfArY/%ED%8A%B8%EC%9C%99%ED%81%B4(Twincle)?type=design&node-id=0%3A1&mode=design&t=Z3C7C9mbvsWADzPB-1'
@@ -79,10 +71,24 @@ const LinkArchive = () => {
               효과적으로 도달할 수 있었습니다.
             </TextContent>
             <TextContent>
+              토큰이 만료될 때 클라이언트가 서비스를 이용하면서 불편함을 느끼지 않도록 갱신하는{' '}
+              <HyperLink
+                text='코드'
+                href='https://gist.github.com/1yoouoo/cb645cf66a7d15a6be2a43036efb4beb'
+              />
+              를 Axios Interceptor를 이용해서 구현했습니다.
+            </TextContent>
+            <TextContent>
+              CI/CD 파이프라인에 테스트 코드를 적용하여, 코드가 병합되기 전에 자동으로 테스트가
+              수행되도록 설정하였습니다. 이를 통해 지속적인 통합/지속적인 배포 환경에서의{' '}
+              <H>코드 품질</H>을 보장하였습니다.
+            </TextContent>
+            <TextContent>
               페이지 이동간의 권한확인을 위해서 페이지마다 권한 확인을 진행해온 반복적인 코드를
               Next.js의 미들웨어를 이용해서 일괄적으로 관리함으로써 반복된 코드를 줄일 수
               있었습니다.
             </TextContent>
+
             <TextContent>
               로컬과 배포된 환경과의 차이를 효과적으로 디버깅하기 위해서 .env와 vercel의 환경변수를
               이용하여 로컬, 개발, 테스트, 운영환경을 분리하여 개발속도를 높였습니다.

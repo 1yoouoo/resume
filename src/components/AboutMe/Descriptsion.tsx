@@ -20,10 +20,6 @@ const Descriptsion = () => {
         위해서 프론트엔드 팀장을 자원하여 팀워크에 대한 역량을 늘리기 위해 노력했습니다.
       </Content>
       <Content>
-        프론트엔드 개발자가 되기 위해서 <H>8개월간 하루 최소 10시간</H>씩 프론트엔드분야에 학습하여
-        엄청난 성장을 할 수 있었습니다.
-      </Content>
-      <Content>
         반복되는 일이 있으면 <H>자동화</H>하는 작업을 좋아하고 트랜드를 읽는 것을 좋아합니다.
         ChatGPT의 OpenAI을 이용하여{' '}
         <HyperLink text='자동화 블로그' href='https://1yoouoo.github.io/' />를 만든 경험이 있습니다.{' '}
