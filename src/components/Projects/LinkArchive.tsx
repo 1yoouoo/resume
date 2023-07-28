@@ -4,14 +4,10 @@ import SvgWrapper from '../Info/SvgWrapper';
 import Vercel from '../Info/Vercel';
 import { H, HyperLink } from '../Styles/Effects';
 import {
-  Desktop,
   Left,
   Line,
   LinkWrapper,
-  ProjectDuration,
-  ProjectTitle,
   Right,
-  Tablet,
   TextContent,
   TextWrapper,
   Title,
@@ -46,6 +42,20 @@ const LinkArchive = () => {
               href='https://github.com/linkarchive/LinkArchive/wiki/2023%E2%80%9005%E2%80%9022-%ED%9A%8C%EC%9D%98%EB%A1%9D'
             />
             를 통해서 다음 기능개발에 대한 소통을 진행했습니다.
+          </p>
+          <p>
+            프로젝트의 진행에 있어서 스프린트 방식을 적극적으로 활용했습니다. 한 스프린트의 주기를
+            일주일로 설정하고, 각 스프린트 시작 전에는 다음 주 동안 개발할 기능들을 선정하고
+            우선순위를 정했습니다. 이를 통해 프로젝트의 방향성을 유지하고, 각자의 작업을 더욱
+            명확하게 파악할 수 있었습니다.
+          </p>
+          <p>
+            또한 데일리 스크럼을 도입하여 매일 간단한 온라인 미팅을 진행했습니다. 이 데일리
+            스크럼에서는 각자가 전날 수행한 작업, 그날 수행할 작업, 그리고 도움이 필요한 부분 등을
+            공유했습니다. 이런 과정을 통해 프로젝트 진행 상황을 상호 간에 빠르게 파악하고, 필요한
+            조치를 즉시 취할 수 있었습니다. 이렇게 스프린트와 데일리 스크럼을 활용함으로써
+            팀원들과의 원활한 커뮤니케이션을 유지하면서 프로젝트의 전체적인 흐름을 효과적으로 관리할
+            수 있었습니다.
           </p>
           <Title>Tech Stack.</Title>
           <p>
