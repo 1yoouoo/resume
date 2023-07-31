@@ -21,7 +21,7 @@ const TestCodeStudy = () => {
           <LinkWrapper>
             <SvgWrapper
               SvgComponent={<Github />}
-              href='https://github.com/linkarchive/StudyArchive/blob/main/TestCode/Home.md'
+              href='https://github.com/linkarchive/StudyArchive/wiki/Jest,-React%E2%80%90testing%E2%80%90library-%EC%8A%A4%ED%84%B0%EB%94%94'
             />
           </LinkWrapper>
         </Left>
