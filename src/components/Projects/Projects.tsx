@@ -1,6 +1,6 @@
 import Section from '../Section';
 import BlogGallery from './BlogGallery';
-import LinkArchive from './LinkArchive';
+import Twinkle from './Twinkle';
 import MbtiChat from './MbtiChat';
 import SweetHome from './SweetHome';
 
@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <>
       <Section title='Projects' />
-      <LinkArchive />
+      <Twinkle />
       <MbtiChat />
       <BlogGallery />
       <SweetHome />

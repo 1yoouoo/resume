@@ -1,7 +1,6 @@
 import React from 'react';
 import Github from '../Info/Github';
 import SvgWrapper from '../Info/SvgWrapper';
-import Vercel from '../Info/Vercel';
 import { H, HyperLink } from '../Styles/Effects';
 import {
   Left,
@@ -15,23 +14,22 @@ import {
 } from './Styles/ProjectStyle';
 import ProjectInfo from './ProjectInfo';
 
-const LinkArchive = () => {
+const Twinkle = () => {
   return (
     <>
       <Wrapper>
         <Left>
-          <ProjectInfo title='LinkArchive' duration='2023. 05 ~ 진행중' />
+          <ProjectInfo title='Twinkle' duration='2023. 05 - 2023. 08' />
           <LinkWrapper>
             <SvgWrapper SvgComponent={<Github />} href='https://github.com/linkarchive/Front-End' />
-            <SvgWrapper SvgComponent={<Vercel />} href='https://www.link-archive.com/' />
           </LinkWrapper>
         </Left>
         <Right>
           <Title>Description.</Title>
           <p>
-            LinkArchive는 북마크가 가능한 소셜 네트워크 서비스입니다. 관심있는 URL을 저장할 수 있고
-            다른 사람의 URL을 둘러볼 수 있으며 북마크를 해서 가져올 수 있는 서비스입니다. 프론트엔드
-            2명, 백엔드 2명, 디자이너 1명과 협업하였습니다.
+            Twinkle은 북마크가 가능한 소셜 네트워크 서비스입니다. 관심있는 URL을 저장할 수 있고 다른
+            사람의 URL을 둘러볼 수 있으며 북마크를 해서 가져올 수 있는 서비스입니다. 프론트엔드 2명,
+            백엔드 2명, 디자이너 1명과 협업하였습니다.
           </p>
           <p>
             전체적인 디자인, 개발설계부터 프론트엔드 기능개발을 맡았습니다. 백엔드와 지속적으로
@@ -39,7 +37,7 @@ const LinkArchive = () => {
             <HyperLink
               text='애자일
             회고'
-              href='https://github.com/linkarchive/LinkArchive/wiki/2023%E2%80%9005%E2%80%9022-%ED%9A%8C%EC%9D%98%EB%A1%9D'
+              href='https://github.com/linkarchive/Front-End/wiki'
             />
             를 통해서 다음 기능개발에 대한 소통을 진행했습니다.
           </p>
@@ -72,12 +70,19 @@ const LinkArchive = () => {
             </TextContent>
 
             <TextContent>
-              토큰이 만료될 때 클라이언트가 서비스를 이용하면서 불편함을 느끼지 않도록 갱신하는{' '}
+              react-query를 이용하여 비동기 데이터 패치와 상태 관리를 최적화 하여 캐싱 로직을
+              효율적으로 관리했습니다. 또한, 네트워크 불안정성등의 이유로 데이터 패치 실패시 재시도
+              매커니즘을 적용하여 사용자에게 안정적인 UI 환경을 구축하였습니다.
+            </TextContent>
+
+            <TextContent>
+              Axios Interceptor를 활용하여 토큰 만료 시, 비동기적으로 토큰을 재발급 받는 동안 모든
+              요청을 큐에 보관하였습니다. 토큰 재발급 후, 해당 큐에 저장된 요청들을 순차적으로
+              처리함으로써 사용자가 서비스 중 <H>불편함을 느끼지 않도록 최적화</H>하였습니다.{' '}
               <HyperLink
                 text='코드'
                 href='https://gist.github.com/1yoouoo/cb645cf66a7d15a6be2a43036efb4beb'
               />
-              를 Axios Interceptor를 이용해서 구현했습니다.
             </TextContent>
 
             <TextContent>
@@ -104,4 +109,4 @@ const LinkArchive = () => {
   );
 };
 
-export default LinkArchive;
+export default Twinkle;

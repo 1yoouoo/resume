@@ -1,6 +1,6 @@
 import React from 'react';
 import { ProjectTitle } from '../Projects/Styles/ProjectStyle';
-import { H, HyperLink } from '../Styles/Effects';
+import { H } from '../Styles/Effects';
 import { P } from './FrontEnd';
 import { styled } from 'styled-components';
 
@@ -15,8 +15,7 @@ const DevOps = () => {
             <li>
               <P>
                 <H>S3 :</H> AWS의 클라우드 저장소인 S3를 이용하여 웹사이트의 정적 파일을 관리하고
-                배포하는 경험이 있습니다. 또한, 사용자가 업로드하는 파일을 안전하게 저장하는데에도
-                사용하였습니다.
+                배포하는 경험이 있습니다.
               </P>
             </li>
             <li>
@@ -37,9 +36,8 @@ const DevOps = () => {
           <ul>
             <li>
               <P>
-                <H>Vercel :</H> Vercel을 이용해 프론트엔드 어플리케이션을{' '}
-                <HyperLink text='배포' href='https://www.link-archive.com/login' />
-                하고 관리한 경험이 있습니다.
+                <H>Vercel :</H> Vercel을 이용해 프론트엔드 어플리케이션을 배포하고 관리한 경험이
+                있습니다.
               </P>
             </li>
             <li>
