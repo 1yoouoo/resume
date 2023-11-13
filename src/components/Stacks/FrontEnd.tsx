@@ -1,6 +1,6 @@
 import React from 'react';
 import { ProjectTitle } from '../Projects/Styles/ProjectStyle';
-import { H, HyperLink } from '../Styles/Effects';
+import { H } from '../Styles/Effects';
 import { styled } from 'styled-components';
 
 const FrontEnd = () => {

@@ -31,6 +31,9 @@ const Wrapper = styled.span`
 `;
 
 const Content = styled.span`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;

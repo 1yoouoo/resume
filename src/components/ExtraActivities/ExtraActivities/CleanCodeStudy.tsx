@@ -12,7 +12,7 @@ import {
 } from '@/components/Projects/Styles/ProjectStyle';
 import SvgWrapper from '@/components/Info/SvgWrapper';
 import Github from '@/components/Info/Github';
-import { H, HyperLink } from '@/components/Styles/Effects';
+import { H } from '@/components/Styles/Effects';
 import { Tooltip } from '@/components/Styles/Tooltip';
 
 const CleanCodeStudy = () => {

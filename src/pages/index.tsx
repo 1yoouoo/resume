@@ -4,6 +4,7 @@ import ExtraActivities from '@/components/ExtraActivities/ExtraActivities';
 import Info from '@/components/Info/Info';
 import Projects from '@/components/Projects/Projects';
 import Stacks from '@/components/Stacks/Stacks';
+import WorkExperience from '@/components/WorkExperience/WorkExperience';
 import { styled } from 'styled-components';
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Wrapper>
         <Info />
         <AboutMe />
+        <WorkExperience />
         <Projects />
         <ExtraActivities />
         <Stacks />
