@@ -51,6 +51,7 @@ const OpenKnowl = () => {
             사내 출/퇴근 관리하는 사이트에 자동로그인이 없어 하루에 2번씩이나 모든 팀원들이 로그인을
             하는 불편함을 느껴왔습니다. 정규직 전환 후 개인 시간에 자동로그인을 해주는 크롬
             익스텐션을 개발하여 50명이 넘는 팀원들의 불편함을 해소한 경험이 있습니다.
+            <HyperLink text='Blog' href='https://1yoouoo.tistory.com/42' />
           </TextContent>
 
           <TextContent>
