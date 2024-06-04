@@ -4,6 +4,7 @@ import { H } from '../Styles/Effects';
 import { styled } from 'styled-components';
 
 const FrontEnd = () => {
+  // TODO: 기술 스택 추가 (SWR, tailwind)
   return (
     <>
       <ProjectTitle>FrontEnd</ProjectTitle>

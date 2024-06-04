@@ -15,6 +15,7 @@ import Link from '../Info/Link';
 import { H, HyperLink } from '../Styles/Effects';
 
 const OpenKnowl = () => {
+  // TODO: 추가로 잘 정리해보자.
   return (
     <Wrapper>
       <Left>

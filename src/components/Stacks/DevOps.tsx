@@ -5,6 +5,7 @@ import { P } from './FrontEnd';
 import { styled } from 'styled-components';
 
 const DevOps = () => {
+  // TODO: 디지털오션 추가, ec2추가
   return (
     <Wrapper>
       <ProjectTitle>DevOps</ProjectTitle>
