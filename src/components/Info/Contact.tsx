@@ -16,7 +16,7 @@ const Contact = () => {
 
 export default Contact;
 
-const Wrapper = styled.div`
+const Wrapper = styled.span`
   display: flex;
   padding: 5px;
 `;

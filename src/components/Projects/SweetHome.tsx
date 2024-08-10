@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Github from '../Info/Github';
 import SvgWrapper from '../Info/SvgWrapper';
 import { H } from '../Styles/Effects';
 import {
+  ChevronButton,
   Left,
   LinkWrapper,
   Right,
@@ -12,10 +13,25 @@ import {
   Wrapper,
 } from './Styles/ProjectStyle';
 import ProjectInfo from './ProjectInfo';
+import Chevron from '@/components/Info/Chevron';
 
 const SweetHome = () => {
+  const [isCollapsed, setIsCollapsed] = useState(true);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      const height = contentRef.current.scrollHeight;
+      contentRef.current.style.setProperty('--content-height', `${height}px`);
+    }
+  }, []);
+
+  const handleClick = () => {
+    setIsCollapsed((prev) => !prev);
+  };
+
   return (
-    <Wrapper>
+    <Wrapper isCollapsed={isCollapsed} ref={contentRef}>
       <Left>
         <ProjectInfo title='SweetHome' duration='2023. 01 - 2023. 03' />
         <LinkWrapper>
@@ -67,6 +83,11 @@ const SweetHome = () => {
           </TextContent>
         </TextWrapper>
       </Right>
+      {isCollapsed && (
+        <ChevronButton onClick={handleClick} isCollapsed={isCollapsed}>
+          <Chevron />
+        </ChevronButton>
+      )}
     </Wrapper>
   );
 };

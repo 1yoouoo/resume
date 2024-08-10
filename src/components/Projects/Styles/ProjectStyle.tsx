@@ -1,10 +1,29 @@
 import { styled } from 'styled-components';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<{ isCollapsed?: boolean }>`
+  position: relative;
   padding: 5px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
+  max-height: ${(props) => (props.isCollapsed ? '250px' : 'var(--content-height)')};
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, white);
+    opacity: ${(props) => (props.isCollapsed ? 1 : 0)};
+    transition: opacity 0.5s ease-out;
+    pointer-events: none;
+  }
+
   @media (max-width: 900px) {
     flex-direction: column;
   }
@@ -69,4 +88,47 @@ export const TextContent = styled.li`
 export const Line = styled.div`
   padding: 10px;
   border-bottom: 1px solid gray;
+`;
+
+export const CollapsibleContent = styled.div<{ isCollapsed: boolean }>`
+  max-height: ${(props) => (props.isCollapsed ? '100px' : 'none')};
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.3s ease-out;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: ${(props) => (props.isCollapsed ? 'linear-gradient(transparent, white)' : 'none')};
+    pointer-events: none;
+  }
+`;
+
+export const ToggleButton = styled.button`
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  margin-top: 10px;
+`;
+
+export const ChevronButton = styled.button<{ isCollapsed: boolean }>`
+  z-index: 100;
+  position: absolute;
+  background: none;
+  bottom: 0px;
+  left: 50%;
+  border: none;
+  cursor: pointer;
+  transform: ${({ isCollapsed }) => (isCollapsed ? 'rotate(180deg)' : 'rotate(0deg)')};
+  transition: transform 0.3s ease;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;

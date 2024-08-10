@@ -4,6 +4,7 @@ const TextWithTooltip = styled.span`
   background-color: #537188;
   padding: 0 3px;
   border-radius: 3px;
+  cursor: default;
 
   color: #fff;
 
@@ -31,13 +32,13 @@ const TooltipImage = styled.img`
   max-height: 500px;
 `;
 
-export const Tooltip = ({ text, href }: { text: string; href?: string }) => {
+export const Tooltip = ({ text, src, href }: { text: string; src: string; href?: string }) => {
   return (
     <TextWithTooltip>
       {text}
       <TooltipWrapper>
         <a href={href} target='_blank' rel='noopener noreferrer'>
-          <TooltipImage src={`/${text}.png`} alt='Preview' />
+          <TooltipImage src={src} alt='Preview' />
         </a>
       </TooltipWrapper>
     </TextWithTooltip>

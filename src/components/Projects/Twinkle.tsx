@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Github from '../Info/Github';
 import SvgWrapper from '../Info/SvgWrapper';
 import { H, HyperLink } from '../Styles/Effects';
 import {
+  ChevronButton,
   Left,
   Line,
   LinkWrapper,
@@ -13,11 +14,26 @@ import {
   Wrapper,
 } from './Styles/ProjectStyle';
 import ProjectInfo from './ProjectInfo';
+import Chevron from '@/components/Info/Chevron';
 
 const Twinkle = () => {
+  const [isCollapsed, setIsCollapsed] = useState(true);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      const height = contentRef.current.scrollHeight;
+      contentRef.current.style.setProperty('--content-height', `${height}px`);
+    }
+  }, []);
+
+  const handleClick = () => {
+    setIsCollapsed((prev) => !prev);
+  };
+
   return (
     <>
-      <Wrapper>
+      <Wrapper isCollapsed={isCollapsed} ref={contentRef}>
         <Left>
           <ProjectInfo title='Twinkle' duration='2023. 05 - 2023. 08' />
           <LinkWrapper>
@@ -103,6 +119,11 @@ const Twinkle = () => {
             </TextContent>
           </TextWrapper>
         </Right>
+        {isCollapsed && (
+          <ChevronButton onClick={handleClick} isCollapsed={isCollapsed}>
+            <Chevron />
+          </ChevronButton>
+        )}
       </Wrapper>
       <Line />
     </>

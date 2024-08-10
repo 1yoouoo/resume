@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Section from '../Section';
-import Descriptsion from './Descriptsion';
+import Description from './Description';
 import ProfileImage from './ProfileImage';
 
 const AboutMe = () => {
@@ -11,7 +11,7 @@ const AboutMe = () => {
         <ProfileImageWrapper>
           <ProfileImage />
         </ProfileImageWrapper>
-        <Descriptsion />
+        <Description />
       </Content>
     </Wrapper>
   );

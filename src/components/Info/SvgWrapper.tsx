@@ -1,19 +1,25 @@
+import Link from 'next/link';
 import React from 'react';
 import { styled } from 'styled-components';
 
 const SvgWrapper = ({ SvgComponent, href }: { SvgComponent: React.ReactNode; href: string }) => {
   return (
-    <a href={href} target='_blank' rel='noopener noreferrer'>
-      <Wrapper>
+    <Container>
+      <Wrapper href={href} target='_blank' rel='noopener noreferrer'>
         <Content>{SvgComponent}</Content>
       </Wrapper>
-    </a>
+    </Container>
   );
 };
 
 export default SvgWrapper;
 
-const Wrapper = styled.span`
+const Container = styled.div`
+  cursor: default;
+  display: inline-block;
+`;
+
+const Wrapper = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;

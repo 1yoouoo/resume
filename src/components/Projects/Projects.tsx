@@ -1,16 +1,16 @@
 import Section from '../Section';
-import BlogGallery from './BlogGallery';
 import Twinkle from './Twinkle';
 import MbtiChat from './MbtiChat';
 import SweetHome from './SweetHome';
+import YoutubeAutoUpload from './YoutubeAutoUpload';
 
 const Projects = () => {
   return (
     <>
       <Section title='Projects' />
+      <YoutubeAutoUpload />
       <Twinkle />
       <MbtiChat />
-      <BlogGallery />
       <SweetHome />
     </>
   );
